@@ -1,0 +1,462 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+
+
+
+.main-header
+	background-color: #eef1f8
+	display: flex
+	justify-content: center
+
+.wrapper
+	display: flex
+	flex-direction: column
+	width: 1640px
+	justify-content: center
+	margin-top: 66px
+
+
+.header-menu
+	display: flex
+	justify-content: space-between
+	align-items: baseline
+
+.header-left
+	display: flex
+
+	a:first-child
+		margin-left: 20px
+
+	a
+		color: $gray
+		text-decoration: none
+		font-size: 18px
+		&:nth-child(2)
+			padding-left: 28px
+
+
+.header-right	
+	display: flex
+	justify-content: space-between
+	width: 72px
+	height: 24px
+	margin-right: 20px
+
+	i
+		transform: scaleX(-1)
+		color: $gray
+		font-size: 17px
+
+		&:hover,focus
+			cursor: pointer
+
+
+// .zoom
+// 	position: relative
+// 	&:hover,focus
+// 		cursor: pointer
+// 	.div
+// 		display:fixed
+
+// .round
+// 	position: absolute
+// 	height: 17px
+// 	width: 17px
+// 	border-radius: 50%
+// 	border: 2px solid $gray
+// 	background-color: none;
+
+// .stick
+// 	position: absolute
+// 	height: 11px
+// 	width: 2px
+// 	background-color: $gray
+// 	transform: rotate(50deg)
+// 	margin-top: 10.4px
+// 	right: 102px
+
+
+.menu-btn
+	display: grid
+	grid-template-columns: 8px 9px
+	grid-template-rows: 8px
+	.lines
+		height: 24px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+
+.vrline
+	height: 24px
+	width: 2px
+	background-color: $gray
+
+.hrline
+	width: 10px
+	height: 2px
+	background-color: $gray
+	&:nth-child(2)
+		grid-row:2/3
+
+.logo
+	margin-top: 82px
+	text-align: center
+
+	.none
+		border-bottom: 2px solid #ccc
+
+	h2
+		margin-top: 40px
+		font-family: "Suisse BP Neue Light", serif
+		font-weight: 300
+		font-size: 22px
+		color: $gray
+
+		span
+			font-family: "Suisse BP Neue Medium", serif
+			color: #1d1d1b
+			border-bottom: 2px solid #f44336
+.header-img
+	display: grid
+	justify-content: center
+
+.header-item
+	width: 690px
+	margin: 0 auto
+	display: flex
+	flex-direction: column
+	justify-content: center
+
+	// display: grid
+	// grid-template-columns: 56px 690px
+	// justify-content: center
+
+	.img
+		height: 690px
+		width: 690px
+		background: url("../img/1.jpg")
+		background-size: cover
+		background-position: center
+		// border: 1px solid red
+		
+	h3
+		align-self: flex-start
+		color: #bbbbbb
+		font-family: "Suisse BP Intl", serif
+		font-size: 22px
+		font-weight: 300
+		
+.main-grid
+	display: grid
+	justify-content: center
+
+.main-article
+	margin: 0 auto
+	width: 686px
+	display: grid
+	justify-content: center
+	text-align: left
+	padding-bottom: 120px
+	// border: 1px solid red
+
+	h2
+		color: #111111
+		font-family: "Suisse BP Intl Antique", sans-serif
+		font-size: 54px
+		font-weight: 400
+		line-height: 1
+		letter-spacing: -1.5px;
+		margin: 0
+
+
+	
+	p
+		color: #666666
+		font-family: "Suisse BP Neue Regular", serif
+		font-size: 22px
+		font-weight: 300
+		margin-top: 40px
+		margin-bottom: 0
+
+
+	p:nth-child(3)
+		margin-top: 57px
+
+	.second
+		margin-top: 29px	
+
+	a
+		position: relative
+		margin-top: 60px
+		font-family: "Suisse BP Neue Medium", serif
+		color: #111111;
+		font-weight: 500
+		text-decoration: none
+		font-size: 22px;
+		font-weight: 500;
+		width: 150px
+		&:after
+			position: absolute
+			display: block
+			content: ''
+			height: 3px
+			width: 100%
+			background: #f44336	 
+			bottom: 2px
+	
+	
+
+
+	a.link
+		margin-top: 0
+		border-bottom: none;
+		font-size: 22px
+		width: 185px
+
+
+	.box
+		display: flex
+		align-items: center
+		margin-top: 30px
+		padding-left: 20px
+
+		div
+			margin-right: 12px
+			width: 25px
+			height: 2px
+			background-color: #f44336
+
+		a.link
+
+			
+
+	
+	
+.main-block
+	width: 690px
+	margin: 0 auto
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	padding-bottom: 80px	
+
+	.img
+		display: grid
+		justify-content: center
+		align-items: center
+		height: 390px
+		width: 690px
+		background: url("../img/_IMG1.jpg")
+		background-size: cover
+		background-position: center
+
+	.second-img
+		.img
+		background: url("../img/2.jpg")
+
+
+		img
+			&:hover,focus
+				cursor: pointer
+				transform: scale(1.10)
+			
+
+
+
+	h3
+		align-self: flex-start
+		color: #bbbbbb
+		font-family: "Suisse BP Intl", serif
+		font-size: 22px
+		font-weight: 300
+.date
+	display: grid
+	justify-content: start
+	height: 46px
+	width: 390px
+	
+
+	.title
+		height: 46px
+		width: 390px
+
+	h3
+		// margin-top: 49px
+		// margin-left: 50px
+		align-self: flex-start
+		color: #bbbbbb
+		font-family: "Suisse BP Intl", serif
+		font-size: 22px
+		font-weight: 300
+
+
+.last
+	padding-bottom: 0
+	
+
+	h2
+		font-size: 45px
+
+
+
+// FOOTER
+
+
+.main-footer
+
+	.wrapper
+		margin: 0 auto
+		width: 1642px
+		
+		div
+			display: grid
+			justify-content: center
+			a.more
+				position: relative
+				text-decoration: none
+				width: auto
+				text-align: center
+				color: #111111
+				font-family: "Suisse BP Intl Antique", sans-serif
+				font-size: 25px
+				font-weight: 500
+				margin-bottom: 0
+				// border-bottom: 3px solid #f44336	
+
+				&:after
+					position: absolute
+					display: block
+					content: ''
+					height: 3px
+					width: 100%
+					background: #f44336	 
+
+					bottom: 5px
+
+
+.footer-bottom
+	display: grid
+	justify-content: space-between
+	align-items: baseline
+	grid-template-columns: repeat(3,1fr)
+
+	margin-top: 160px
+	padding-bottom: 70px
+
+	
+.center
+	margin: 0 auto
+	display: grid
+	grid-template-columns: repeat(3,1fr)
+	width: 125px	
+
+	i
+		color: #bbbbbb
+		font-size: 24px
+		font-weight: 400
+
+.left
+	
+
+	p
+		color: #bbbbbb;
+		font-family: "Suisse BP Neue Regular", sans-serif
+		font-size: 18px
+		margin-bottom: 0
+		margin-top: 0
+		&:last-child
+			margin-top: 26px
+
+		
+		span
+			color: #111
+
+		img
+			width: 33px
+			height: 11px
+
+.right
+
+	a
+		color: #111111
+		font-family: 'Roboto', sans-serif
+		font-size: 18px
+		text-decoration: none
+
+		&:hover,focus
+			cursor: pointer
+
+
+// PAGE 2
+
+.main-title
+	text-align: center
+
+	h2
+		color: #1d1d1b
+		font-family: "Suisse BP Intl Antique", sans-serif
+		font-size: 60px
+		font-weight: 400
+		margin-top: 160px
+		margin-bottom: 0
+		height: 50px
+
+	p
+		margin-top: 35px
+		color: #666666
+		font-family: "Suisse BP Neue Light", serif
+		font-size: 30px
+		font-weight: 300
+		line-height: 36px
+
+		span
+			color: #1d1d1b
+
+.main-content
+	display: flex
+	flex-direction: column
+	align-items: center
+	
+	img
+		width: 690px
+		height: 480px
+		background-size: cover
+
+
+.main-text
+	width: 690px
+	
+	p
+		color: #666666;
+		font-family: "Suisse BP Neue Light", serif
+		font-size: 22px
+		font-weight: 300
+		margin-bottom: 96px
+		margin-top: 0
+
+		span
+			border-bottom: 2px solid #ccc
+
+	.first
+		margin-top: 100px
+		margin-bottom: 57px
+		// &:first-letter
+		// 	left: 50px
+		// 	color: #1d1d1b
+		// 	font-size: 70px
+		// 	font-family: "Suisse BP Intl Medium", serif
+
+
+
+
+
+
+
+
+// Пользовательские стили
+
+@import "media" // Всегда в конце
